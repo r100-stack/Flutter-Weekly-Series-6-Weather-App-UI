@@ -10,21 +10,6 @@ class WeatherCard extends StatelessWidget {
       decoration: BoxDecoration(
 
       ),
-
-      // TODO (1): child = Container()
-      // TODO (2): Container.child = Column()
-
-      // Column's children
-      // TODO (3): 1. const SizedBox(height: 20.0)
-      // TODO (4): 2. Image (150x100, assets/images/cloudy_with_sun.png)
-      // TODO (5): 3. Text('Heavy Rain', Raleway, 0xFFE2EBFF, 24.0, bold)
-      // TODO (6): 4. const SizedBox(height: 10.0)
-      // TODO (7): 5. Text('Sunday, 02 Oct', Raleway, 0xFF7EA5FF, 16.0, w400)
-      // TODO (8): 6. const SizedBox(height: 20.0)
-
-      // TODO (9): Wrap the Container in ClipRRect => circular, kDefaultBorderRadius
-      // TODO (10): Inner Container decoration(0xFF427BFF, CircularBorder(kDefaultBorderRadius))
-
       child: ClipRRect(
         borderRadius: BorderRadius.circular(kDefaultBorderRadius),
         child: Container(
