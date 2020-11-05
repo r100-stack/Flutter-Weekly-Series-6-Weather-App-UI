@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: Colors.white,
         primaryColor: Color(0xFF427BFF),
+        accentColor: Color(0xFF427BFF),
       ),
       debugShowCheckedModeBanner: false,
       home: HomeScreen(),
