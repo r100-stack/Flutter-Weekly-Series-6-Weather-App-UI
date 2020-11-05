@@ -26,11 +26,11 @@ class HomeScreen extends StatelessWidget {
 
                         // TODO (1): style = Raleway, bold, 25.0, 0xFF333333
 
-                        // style: GoogleFonts.raleway(
-                        //   fontWeight: FontWeight.bold,
-                        //   fontSize: 25.0,
-                        //   color: Color(0xFF333333),
-                        // ),
+                        style: GoogleFonts.raleway(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 25.0,
+                          color: Color(0xFF333333),
+                        ),
                       ),
                       const SizedBox(width: 8.0),
                       Text(
@@ -38,11 +38,11 @@ class HomeScreen extends StatelessWidget {
 
                         // TODO (2): style = Raleway, w300, 21.0, 0xFF676767
 
-                        // style: GoogleFonts.raleway(
-                        //   fontWeight: FontWeight.w300,
-                        //   fontSize: 21.0,
-                        //   color: Color(0xFF676767),
-                        // ),
+                        style: GoogleFonts.raleway(
+                          fontWeight: FontWeight.w300,
+                          fontSize: 21.0,
+                          color: Color(0xFF676767),
+                        ),
 
                       ),
                     ],
