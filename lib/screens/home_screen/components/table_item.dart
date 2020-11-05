@@ -30,10 +30,26 @@ class TableItem extends StatelessWidget {
               children: [
                 Text(
                   title,
+
+                  // TODO (1): style = nunito(0xFFB2C9FF, 16.0, w500)
+
+                  // style: GoogleFonts.nunito(
+                  //     color: Color(0xFFB2C9FF),
+                  //     fontSize: 16.0,
+                  //     fontWeight: FontWeight.w500),
+
                 ),
                 const SizedBox(height: 5.0),
                 Text(
                   subtitle,
+
+                  // TODO (2): style = nunito(0xFFFFFFFF, 18.0, w500)
+
+                  // style: GoogleFonts.nunito(
+                  //     color: Color(0xFFFFFFFF),
+                  //     fontSize: 18.0,
+                  //     fontWeight: FontWeight.w500),
+
                 ),
               ],
             ),
