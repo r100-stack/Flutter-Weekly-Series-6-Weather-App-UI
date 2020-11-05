@@ -19,14 +19,13 @@ class HourlyWeatherCard extends StatelessWidget {
         // TODO (2): border = Border.all(0xFFECECEC)
         // TODO (3): borderRadius = circular(kDefaultBorderRadius)
 
-        // color: Color(0xFF427BFF),
-        // border: Border.all(
-        //   color: Color(0xFFECECEC),
-        // ),
-        // borderRadius: BorderRadius.circular(kDefaultBorderRadius),
+        color: Color(0xFF427BFF),
+        border: Border.all(
+          color: Color(0xFFECECEC),
+        ),
+        borderRadius: BorderRadius.circular(kDefaultBorderRadius),
 
       ),
-      child: null,
 
       // TODO (4): child = Column(mainAxisAlignment = center)
 
@@ -35,30 +34,30 @@ class HourlyWeatherCard extends StatelessWidget {
       // TODO (6): 2. Image(weather.image)
       // TODO (7): 3. Text(weather.temp, nunito(18.0, white, bold))
 
-      // child: Column(
-      //   mainAxisAlignment: MainAxisAlignment.center,
-      //   children: [
-      //     Text(
-      //       weather.time,
-      //       style: GoogleFonts.nunito(
-      //         fontSize: 16.0,
-      //         color: Colors.white,
-      //         fontWeight: FontWeight.w500,
-      //       ),
-      //     ),
-      //     Image(
-      //       image: AssetImage(weather.image),
-      //     ),
-      //     Text(
-      //       weather.temp,
-      //       style: GoogleFonts.nunito(
-      //         fontSize: 18.0,
-      //         color: Colors.white,
-      //         fontWeight: FontWeight.bold,
-      //       ),
-      //     )
-      //   ],
-      // ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            weather.time,
+            style: GoogleFonts.nunito(
+              fontSize: 16.0,
+              color: Colors.white,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+          Image(
+            image: AssetImage(weather.image),
+          ),
+          Text(
+            weather.temp,
+            style: GoogleFonts.nunito(
+              fontSize: 18.0,
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+            ),
+          )
+        ],
+      ),
 
     );
   }

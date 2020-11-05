@@ -9,6 +9,16 @@ class WeatherCard extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
 
+        // TODO (8): boxShadow = [(Colors.grey[400], Offset(0, 4), blurRadius: 10.0)]
+
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey[400],
+            offset: Offset(0, 4),
+            blurRadius: 10.0,
+          ),
+        ],
+
       ),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(kDefaultBorderRadius),
