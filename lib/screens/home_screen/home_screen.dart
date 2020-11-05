@@ -23,19 +23,10 @@ class HomeScreen extends StatelessWidget {
                     children: [
                       Text(
                         'Bandung,',
-                        style: GoogleFonts.raleway(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 25.0,
-                          color: Color(0xFF333333),
-                        ),
                       ),
                       const SizedBox(width: 8.0),
                       Text(
                         'Indonesia',
-                        style: GoogleFonts.raleway(
-                            fontWeight: FontWeight.w300,
-                            fontSize: 21.0,
-                            color: Color(0xFF676767)),
                       ),
                     ],
                   ),

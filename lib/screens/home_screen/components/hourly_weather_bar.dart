@@ -46,18 +46,10 @@ class HourlyWeatherBar extends StatelessWidget {
               children: [
                 Text(
                   'Today',
-                  style: GoogleFonts.nunito(
-                      color: Color(0xFF212121),
-                      fontSize: 20.0,
-                      fontWeight: FontWeight.w700),
                 ),
                 Spacer(),
                 Text(
                   'Next 7 days',
-                  style: GoogleFonts.nunito(
-                      color: Color(0xFF6B6B6B),
-                      fontSize: 20.0,
-                      fontWeight: FontWeight.w700),
                 ),
                 Icon(
                   Icons.navigate_next,
@@ -69,14 +61,7 @@ class HourlyWeatherBar extends StatelessWidget {
           const SizedBox(height: 30.0),
           Container(
             height: 125.0,
-            child: ListView.separated(
-              padding: padding,
-              scrollDirection: Axis.horizontal,
-              itemBuilder: (context, index) =>
-                  HourlyWeatherCard(weather: _hourlyWeather[index]),
-              itemCount: _hourlyWeather.length,
-              separatorBuilder: (context, index) => const SizedBox(width: 10.0),
-            ),
+            child: null,
           )
         ],
       ),

@@ -14,7 +14,6 @@ class TableItem extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 12.0),
       child: Row(
-        // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Expanded(
             flex: 5,
@@ -31,18 +30,10 @@ class TableItem extends StatelessWidget {
               children: [
                 Text(
                   title,
-                  style: GoogleFonts.nunito(
-                      color: Color(0xFFB2C9FF),
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.w500),
                 ),
                 const SizedBox(height: 5.0),
                 Text(
                   subtitle,
-                  style: GoogleFonts.nunito(
-                      color: Color(0xFFFFFFFF),
-                      fontSize: 18.0,
-                      fontWeight: FontWeight.w500),
                 ),
               ],
             ),
