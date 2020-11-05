@@ -5,28 +5,20 @@ import 'package:weather_app_6/screens/home_screen/models/weather.dart';
 
 class HourlyWeatherBar extends StatelessWidget {
   final List<Weather> _hourlyWeather = [
-    Weather(
-        time: '12:00', temp: 'Now', image: 'assets/images/cloudy.png'),
-    Weather(
-        time: '14:00', temp: '22°', image: 'assets/images/rainy.png'),
+    Weather(time: '12:00', temp: 'Now', image: 'assets/images/cloudy.png'),
+    Weather(time: '14:00', temp: '22°', image: 'assets/images/rainy.png'),
     Weather(
         time: '16:00', temp: '26°', image: 'assets/images/cloudy_with_sun.png'),
     Weather(
         time: '18:00', temp: '25°', image: 'assets/images/cloudy_with_sun.png'),
-    Weather(
-        time: '20:00', temp: '31°', image: 'assets/images/sun.png'),
-    Weather(
-        time: '22:00', temp: '24°', image: 'assets/images/rainy.png'),
-    Weather(
-        time: '00:00', temp: '26°', image: 'assets/images/rainy.png'),
-    Weather(
-        time: '02:00', temp: '25°', image: 'assets/images/cloudy.png'),
-    Weather(
-        time: '04:00', temp: '31°', image: 'assets/images/cloudy.png'),
+    Weather(time: '20:00', temp: '31°', image: 'assets/images/sun.png'),
+    Weather(time: '22:00', temp: '24°', image: 'assets/images/rainy.png'),
+    Weather(time: '00:00', temp: '26°', image: 'assets/images/rainy.png'),
+    Weather(time: '02:00', temp: '25°', image: 'assets/images/cloudy.png'),
+    Weather(time: '04:00', temp: '31°', image: 'assets/images/cloudy.png'),
     Weather(
         time: '06:00', temp: '24°', image: 'assets/images/cloudy_with_sun.png'),
-    Weather(
-        time: '08:00', temp: '31°', image: 'assets/images/sun.png'),
+    Weather(time: '08:00', temp: '31°', image: 'assets/images/sun.png'),
     Weather(
         time: '10:00', temp: '24°', image: 'assets/images/cloudy_with_sun.png'),
   ];
@@ -46,26 +38,18 @@ class HourlyWeatherBar extends StatelessWidget {
               children: [
                 Text(
                   'Today',
-
-                  // TODO (1): style = nunito(0xFF212121, 20.0, w700)
-
                   style: GoogleFonts.nunito(
                       color: Color(0xFF212121),
                       fontSize: 20.0,
                       fontWeight: FontWeight.w700),
-
                 ),
                 Spacer(),
                 Text(
                   'Next 7 days',
-
-                  // TODO (2): style = nunito(0xFF6B6B6B, 20.0, w700)
-
                   style: GoogleFonts.nunito(
                       color: Color(0xFF6B6B6B),
                       fontSize: 20.0,
                       fontWeight: FontWeight.w700),
-
                 ),
                 Icon(
                   Icons.navigate_next,
@@ -77,14 +61,6 @@ class HourlyWeatherBar extends StatelessWidget {
           const SizedBox(height: 30.0),
           Container(
             height: 125.0,
-
-            // TODO (3): child = ListView.separated()
-            // TODO (4): padding = padding
-            // TODO (5): scrollDirection: Axis.horizontal,
-            // TODO (6): itemBuilder => HourlyWeatherCard(weather: _hourlyWeather[index])
-            // TODO (7): itemCount: _hourlyWeather.length
-            // TODO (8): separatorBuilder => const SizedBox(width: 10.0)
-
             child: ListView.separated(
               padding: padding,
               scrollDirection: Axis.horizontal,
@@ -93,7 +69,6 @@ class HourlyWeatherBar extends StatelessWidget {
               itemCount: _hourlyWeather.length,
               separatorBuilder: (context, index) => const SizedBox(width: 10.0),
             ),
-
           )
         ],
       ),
