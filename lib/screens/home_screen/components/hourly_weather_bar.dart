@@ -49,10 +49,10 @@ class HourlyWeatherBar extends StatelessWidget {
 
                   // TODO (1): style = nunito(0xFF212121, 20.0, w700)
 
-                  // style: GoogleFonts.nunito(
-                  //     color: Color(0xFF212121),
-                  //     fontSize: 20.0,
-                  //     fontWeight: FontWeight.w700),
+                  style: GoogleFonts.nunito(
+                      color: Color(0xFF212121),
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.w700),
 
                 ),
                 Spacer(),
@@ -61,10 +61,10 @@ class HourlyWeatherBar extends StatelessWidget {
 
                   // TODO (2): style = nunito(0xFF6B6B6B, 20.0, w700)
 
-                  // style: GoogleFonts.nunito(
-                  //     color: Color(0xFF6B6B6B),
-                  //     fontSize: 20.0,
-                  //     fontWeight: FontWeight.w700),
+                  style: GoogleFonts.nunito(
+                      color: Color(0xFF6B6B6B),
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.w700),
 
                 ),
                 Icon(
@@ -77,7 +77,6 @@ class HourlyWeatherBar extends StatelessWidget {
           const SizedBox(height: 30.0),
           Container(
             height: 125.0,
-            child: null,
 
             // TODO (3): child = ListView.separated()
             // TODO (4): padding = padding
@@ -86,14 +85,14 @@ class HourlyWeatherBar extends StatelessWidget {
             // TODO (7): itemCount: _hourlyWeather.length
             // TODO (8): separatorBuilder => const SizedBox(width: 10.0)
 
-            // child: ListView.separated(
-            //   padding: padding,
-            //   scrollDirection: Axis.horizontal,
-            //   itemBuilder: (context, index) =>
-            //       HourlyWeatherCard(weather: _hourlyWeather[index]),
-            //   itemCount: _hourlyWeather.length,
-            //   separatorBuilder: (context, index) => const SizedBox(width: 10.0),
-            // ),
+            child: ListView.separated(
+              padding: padding,
+              scrollDirection: Axis.horizontal,
+              itemBuilder: (context, index) =>
+                  HourlyWeatherCard(weather: _hourlyWeather[index]),
+              itemCount: _hourlyWeather.length,
+              separatorBuilder: (context, index) => const SizedBox(width: 10.0),
+            ),
 
           )
         ],
