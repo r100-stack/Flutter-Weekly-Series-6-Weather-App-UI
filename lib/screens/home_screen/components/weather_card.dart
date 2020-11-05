@@ -8,9 +8,6 @@ class WeatherCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-
-        // TODO (8): boxShadow = [(Colors.grey[400], Offset(0, 4), blurRadius: 10.0)]
-
         boxShadow: [
           BoxShadow(
             color: Colors.grey[400],
@@ -18,7 +15,6 @@ class WeatherCard extends StatelessWidget {
             blurRadius: 10.0,
           ),
         ],
-
       ),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(kDefaultBorderRadius),
@@ -111,7 +107,6 @@ class WeatherCard extends StatelessWidget {
                   )
                 ],
               )
-
             ],
           ),
         ),

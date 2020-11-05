@@ -14,11 +14,6 @@ class HourlyWeatherCard extends StatelessWidget {
       width: 60.0,
       height: 100.0,
       decoration: BoxDecoration(
-
-        // TODO (1): color = 0xFF427BFF
-        // TODO (2): border = Border.all(0xFFECECEC)
-        // TODO (3): borderRadius = circular(kDefaultBorderRadius)
-
         color: Color(0xFF427BFF),
         border: Border.all(
           color: Color(0xFFECECEC),
@@ -26,14 +21,6 @@ class HourlyWeatherCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(kDefaultBorderRadius),
 
       ),
-
-      // TODO (4): child = Column(mainAxisAlignment = center)
-
-      // Column's children
-      // TODO (5): 1. Text(weather.text, nunito(16.0, white, w500))
-      // TODO (6): 2. Image(weather.image)
-      // TODO (7): 3. Text(weather.temp, nunito(18.0, white, bold))
-
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
