@@ -13,7 +13,7 @@ Have questions? Then [join our Google Classroom today](https://classroom.google.
 
 ## 6. Weather App UI ⛅
 
-See how much 1 USD equals in almost all major currencies!
+Professional Flutter UI that displays mock weather data.
 
 **Credits: [App design idea (Dribbble)](https://dribbble.com/shots/14328625-Weather-Forecast-App) created by [Muhammad Noufal](https://dribbble.com/muhammad_noufal). All credits to Muhammad!**
 
