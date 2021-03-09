@@ -55,7 +55,10 @@ class HomeScreen extends StatelessWidget {
   Widget _buildRow() {
     return Row(
       children: [
-        Expanded(child: _buildMainCard()),
+        Container(
+          constraints: BoxConstraints(maxWidth: 600),
+          child: _buildMainCard(),
+        ),
         Expanded(
             child: HourlyWeatherBar(
                 padding: const EdgeInsets.symmetric(horizontal: 12.0))),
@@ -71,7 +74,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: CustomAppBar(),
       body: SingleChildScrollView(
-        child: width <= 800 ? _buildColumn() : _buildRow(),
+        child: width <= 900 ? _buildColumn() : _buildRow(),
       ),
     );
   }
