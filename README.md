@@ -55,6 +55,8 @@ Professional Flutter UI that displays mock weather data.
 <img src="assets/screenshot_step6.png">
 7. Adding hourly weather cards
 <img src="assets/screenshot_step7.gif">
+8. Modify UI for large screens
+<img src="assets/screenshot_step8.gif">
 
 ### Skills Learned
 
@@ -74,3 +76,5 @@ Professional Flutter UI that displays mock weather data.
   * color
   * leading
   * actions
+* Modify UI for large screens
+* Flutter Web
