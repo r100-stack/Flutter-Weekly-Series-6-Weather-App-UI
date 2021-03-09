@@ -8,14 +8,17 @@ import 'package:weather_app_6/screens/home_screen/components/weather_card.dart';
 class HomeScreen extends StatelessWidget {
   // TODO (3): Create _buildRow()
   // TODO (4): Return the same as _buildColumn() but with Row
-  // TODO (5): Wrap each widget with expanded
+  
+  // In Row()
+  // TODO (5): Wrap _buildMain() with Container(maxWidth = 600)
+  // TODO (6): Wrap HourlyWeatherBar() with Expanded
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(),
       body: SingleChildScrollView(
-        // TODO (6): If width <= 800, child: _buildColumn(), else, child: _buildRow()
+        // TODO (7): If width <= 900, child: _buildColumn(), else, child: _buildRow()
 
         // TODO (2): Extract this widget to _buildColumn()
         child: Column(
